@@ -12,6 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let storuboard = UIStoryboard(name: "Tabbar", bundle: nil)
+        let vc = storuboard.instantiateViewController(withIdentifier: "Tabbar")
+        self.navigationController?.pushViewController(vc, animated: false)
         // Do any additional setup after loading the view.
     }
 

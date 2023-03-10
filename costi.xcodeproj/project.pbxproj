@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C7A9F3529B8F24D00984E8E /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A9F3429B8F24D00984E8E /* Tabbar.storyboard */; };
 		2CF30ABC29B0ADD800DF5CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF30ABB29B0ADD800DF5CD3 /* AppDelegate.swift */; };
 		2CF30ABE29B0ADD800DF5CD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF30ABD29B0ADD800DF5CD3 /* SceneDelegate.swift */; };
 		2CF30AC029B0ADD800DF5CD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF30ABF29B0ADD800DF5CD3 /* ViewController.swift */; };
@@ -16,11 +17,12 @@
 		2CF30AD329B0ADD900DF5CD3 /* costiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF30AD229B0ADD900DF5CD3 /* costiTests.swift */; };
 		2CF30ADD29B0ADD900DF5CD3 /* costiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF30ADC29B0ADD900DF5CD3 /* costiUITests.swift */; };
 		2CF30ADF29B0ADD900DF5CD3 /* costiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF30ADE29B0ADD900DF5CD3 /* costiUITestsLaunchTests.swift */; };
-		2CF30AEC29B0AEB400DF5CD3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CF30AEB29B0AEB400DF5CD3 /* GoogleService-Info.plist */; };
 		2CF30AEF29B0BE0900DF5CD3 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2CF30AEE29B0BE0900DF5CD3 /* FirebaseAnalytics */; };
 		2CF30AF129B0BE0900DF5CD3 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 2CF30AF029B0BE0900DF5CD3 /* FirebaseDatabase */; };
 		2CF30AF329B0BE0900DF5CD3 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2CF30AF229B0BE0900DF5CD3 /* FirebaseFirestore */; };
 		2CF30AF529B0BE0900DF5CD3 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2CF30AF429B0BE0900DF5CD3 /* FirebaseStorage */; };
+		2CF462B329BB8B6A0025DD08 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF462B229BB8B6A0025DD08 /* TabbarController.swift */; };
+		2CF462B629BB8CA90025DD08 /* Dice1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF462B529BB8CA90025DD08 /* Dice1ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C7A9F3429B8F24D00984E8E /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
 		2CF30AB829B0ADD800DF5CD3 /* costi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = costi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF30ABB29B0ADD800DF5CD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CF30ABD29B0ADD800DF5CD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +57,8 @@
 		2CF30AD829B0ADD900DF5CD3 /* costiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = costiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF30ADC29B0ADD900DF5CD3 /* costiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = costiUITests.swift; sourceTree = "<group>"; };
 		2CF30ADE29B0ADD900DF5CD3 /* costiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = costiUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		2CF30AEB29B0AEB400DF5CD3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2CF462B229BB8B6A0025DD08 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		2CF462B529BB8CA90025DD08 /* Dice1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice1ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C7A9F3129B8F0D000984E8E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2CF30ABB29B0ADD800DF5CD3 /* AppDelegate.swift */,
+				2CF30ABD29B0ADD800DF5CD3 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2C7A9F3229B8F0ED00984E8E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2CF30ABF29B0ADD800DF5CD3 /* ViewController.swift */,
+				2CF30AC129B0ADD800DF5CD3 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2C7A9F3329B8F21200984E8E /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				2CF462B429BB8C5F0025DD08 /* Dice1 */,
+				2C7A9F3429B8F24D00984E8E /* Tabbar.storyboard */,
+				2CF462B229BB8B6A0025DD08 /* TabbarController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
 		2CF30AAF29B0ADD800DF5CD3 = {
 			isa = PBXGroup;
 			children = (
@@ -109,14 +141,12 @@
 		2CF30ABA29B0ADD800DF5CD3 /* costi */ = {
 			isa = PBXGroup;
 			children = (
-				2CF30ABB29B0ADD800DF5CD3 /* AppDelegate.swift */,
-				2CF30ABD29B0ADD800DF5CD3 /* SceneDelegate.swift */,
-				2CF30ABF29B0ADD800DF5CD3 /* ViewController.swift */,
-				2CF30AC129B0ADD800DF5CD3 /* Main.storyboard */,
 				2CF30AC429B0ADD900DF5CD3 /* Assets.xcassets */,
+				2C7A9F3129B8F0D000984E8E /* Application */,
+				2C7A9F3229B8F0ED00984E8E /* Main */,
+				2C7A9F3329B8F21200984E8E /* Tabbar */,
 				2CF30AC629B0ADD900DF5CD3 /* LaunchScreen.storyboard */,
 				2CF30AC929B0ADD900DF5CD3 /* Info.plist */,
-				2CF30AEB29B0AEB400DF5CD3 /* GoogleService-Info.plist */,
 			);
 			path = costi;
 			sourceTree = "<group>";
@@ -136,6 +166,14 @@
 				2CF30ADE29B0ADD900DF5CD3 /* costiUITestsLaunchTests.swift */,
 			);
 			path = costiUITests;
+			sourceTree = "<group>";
+		};
+		2CF462B429BB8C5F0025DD08 /* Dice1 */ = {
+			isa = PBXGroup;
+			children = (
+				2CF462B529BB8CA90025DD08 /* Dice1ViewController.swift */,
+			);
+			path = Dice1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,8 +289,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C7A9F3529B8F24D00984E8E /* Tabbar.storyboard in Resources */,
 				2CF30AC829B0ADD900DF5CD3 /* LaunchScreen.storyboard in Resources */,
-				2CF30AEC29B0AEB400DF5CD3 /* GoogleService-Info.plist in Resources */,
 				2CF30AC529B0ADD900DF5CD3 /* Assets.xcassets in Resources */,
 				2CF30AC329B0ADD800DF5CD3 /* Main.storyboard in Resources */,
 			);
@@ -280,6 +318,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CF30AC029B0ADD800DF5CD3 /* ViewController.swift in Sources */,
+				2CF462B329BB8B6A0025DD08 /* TabbarController.swift in Sources */,
+				2CF462B629BB8CA90025DD08 /* Dice1ViewController.swift in Sources */,
 				2CF30ABC29B0ADD800DF5CD3 /* AppDelegate.swift in Sources */,
 				2CF30ABE29B0ADD800DF5CD3 /* SceneDelegate.swift in Sources */,
 			);
