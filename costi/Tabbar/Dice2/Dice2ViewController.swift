@@ -65,10 +65,6 @@ class Dice2ViewController: UIViewController{
 //        pokerDiceFiveSingleTap.numberOfTapsRequired = 1
 //        pokerDiceFiveSingleTap.numberOfTouchesRequired = 1
 //        pokerDiceFiveImage.addGestureRecognizer(pokerDiceFiveSingleTap)
-        pokerDiceTwoImage.addGestureRecognizer(pokerDiceOneSingleTap)
-        pokerDiceThreeImage.addGestureRecognizer(pokerDiceOneSingleTap)
-        pokerDiceFourImage.addGestureRecognizer(pokerDiceOneSingleTap)
-        pokerDiceFiveImage.addGestureRecognizer(pokerDiceOneSingleTap)
     }
 
 //    @IBAction func pokerDiceOneSingleTap(_ sender: Any) {
