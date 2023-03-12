@@ -58,7 +58,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FDu-e4-rap"/>
-                        <color key="backgroundColor" red="0.80109405519999999" green="0.61656397669999996" blue="0.060481481830000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="dpu-Vh-W7v" appends="YES" id="lWp-gi-DVn"/>
@@ -115,11 +115,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u22-sw-9S9">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u22-sw-9S9">
                                 <rect key="frame" x="163" y="627" width="66" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.2603673339" green="0.055810548369999997" blue="0.1452732384" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="ROLL"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ROLL"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MTx-om-IER">
                                 <rect key="frame" x="136" y="280" width="120" height="120"/>
@@ -127,7 +128,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Qs8-gH-vCC"/>
-                        <color key="backgroundColor" red="0.80109405519999999" green="0.61656397665969054" blue="0.060481481834237669" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="1black" selectedImage="1black" id="cLu-eB-mx0"/>

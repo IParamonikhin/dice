@@ -19,10 +19,9 @@
         <!--Navigation Controller-->
         <scene sceneID="OO8-py-Ca6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="partialCurl" id="3qd-bQ-cYu" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="partialCurl" navigationBarHidden="YES" id="3qd-bQ-cYu" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="B2n-gT-7qr">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.30728459359999999" green="0.14364966749999999" blue="0.13858306409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
