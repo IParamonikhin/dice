@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C7A9F3529B8F24D00984E8E /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A9F3429B8F24D00984E8E /* Tabbar.storyboard */; };
+		2CD01E3029BC769500196325 /* Dice2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD01E2F29BC769500196325 /* Dice2ViewController.swift */; };
 		2CF30ABC29B0ADD800DF5CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF30ABB29B0ADD800DF5CD3 /* AppDelegate.swift */; };
 		2CF30ABE29B0ADD800DF5CD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF30ABD29B0ADD800DF5CD3 /* SceneDelegate.swift */; };
 		2CF30AC029B0ADD800DF5CD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF30ABF29B0ADD800DF5CD3 /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		2C7A9F3429B8F24D00984E8E /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
+		2CD01E2F29BC769500196325 /* Dice2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice2ViewController.swift; sourceTree = "<group>"; };
 		2CF30AB829B0ADD800DF5CD3 /* costi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = costi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF30ABB29B0ADD800DF5CD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CF30ABD29B0ADD800DF5CD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,10 +114,19 @@
 			isa = PBXGroup;
 			children = (
 				2CF462B429BB8C5F0025DD08 /* Dice1 */,
+				2CD01E2E29BC767900196325 /* Dice2 */,
 				2C7A9F3429B8F24D00984E8E /* Tabbar.storyboard */,
 				2CF462B229BB8B6A0025DD08 /* TabbarController.swift */,
 			);
 			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		2CD01E2E29BC767900196325 /* Dice2 */ = {
+			isa = PBXGroup;
+			children = (
+				2CD01E2F29BC769500196325 /* Dice2ViewController.swift */,
+			);
+			path = Dice2;
 			sourceTree = "<group>";
 		};
 		2CF30AAF29B0ADD800DF5CD3 = {
@@ -319,6 +330,7 @@
 			files = (
 				2CF30AC029B0ADD800DF5CD3 /* ViewController.swift in Sources */,
 				2CF462B329BB8B6A0025DD08 /* TabbarController.swift in Sources */,
+				2CD01E3029BC769500196325 /* Dice2ViewController.swift in Sources */,
 				2CF462B629BB8CA90025DD08 /* Dice1ViewController.swift in Sources */,
 				2CF30ABC29B0ADD800DF5CD3 /* AppDelegate.swift in Sources */,
 				2CF30ABE29B0ADD800DF5CD3 /* SceneDelegate.swift in Sources */,
@@ -496,11 +508,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J5V4FRQ99J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = costi/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.board-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -525,11 +539,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J5V4FRQ99J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = costi/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.board-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
