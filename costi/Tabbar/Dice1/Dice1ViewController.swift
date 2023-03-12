@@ -9,7 +9,6 @@ import UIKit
 import Foundation
 
 
-
 class Dice1ViewController: UIViewController {
 
     @IBOutlet weak var diceOne: UIImageView!

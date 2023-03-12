@@ -9,7 +9,6 @@ import UIKit
 import Foundation
 
 
-
 class Dice2ViewController: UIViewController{
 
     struct PokerDice{
@@ -31,7 +30,7 @@ class Dice2ViewController: UIViewController{
     var diceFour = PokerDice(false)
     var diceFive = PokerDice(false)
     var firtstTap = false
-
+ 
     
     
     override func viewDidLoad() {
