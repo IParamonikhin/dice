@@ -17,8 +17,7 @@ class Dice1ViewController: UIViewController {
     @IBOutlet weak var rollButton: UIButton!
     
     @IBAction func singleTap(_ sender: UITapGestureRecognizer) {
-        var val1 = randomVal()
-        diceOne.image = UIImage(named: "\(String(val1))white.png")
+        diceOne.image = UIImage(named: "\(String(randomVal()))white.png")
     }
     
     override func viewDidLoad() {

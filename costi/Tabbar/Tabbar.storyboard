@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pST-O3-M5Z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -19,30 +19,46 @@
                                 <rect key="frame" x="16" y="235" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jLf-dI-u8V">
-                                <rect key="frame" x="257" y="235" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rCz-jQ-RBc">
-                                <rect key="frame" x="77" y="363" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jcq-bV-Ish">
-                                <rect key="frame" x="198" y="363" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Ays-Sq-gG7" appends="YES" id="MAW-e4-RPm"/>
+                                    <outletCollection property="gestureRecognizers" destination="Ays-Sq-gG7" appends="YES" id="Y3k-JF-ObA"/>
+                                </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RCS-0H-3bp">
                                 <rect key="frame" x="136" y="235" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hEN-2l-lnk" appends="YES" id="nCX-fK-xrh"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jLf-dI-u8V">
+                                <rect key="frame" x="257" y="235" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="sko-0H-Tr4" appends="YES" id="ZJ7-DD-XgN"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rCz-jQ-RBc">
+                                <rect key="frame" x="77" y="363" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="twP-1y-7hx" appends="YES" id="hIw-uN-rOg"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jcq-bV-Ish">
+                                <rect key="frame" x="198" y="363" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="f8J-81-nwv" appends="YES" id="a5C-Jr-zi9"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FDu-e4-rap"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.80109405519999999" green="0.61656397669999996" blue="0.060481481830000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="dpu-Vh-W7v" appends="YES" id="lWp-gi-DVn"/>
@@ -60,7 +76,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MtQ-yW-160" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="dpu-Vh-W7v" userLabel="screenSingleTap">
                     <connections>
-                        <action selector="pokerDiceOneSingleTap:" destination="1Fp-Zm-xDT" id="0sc-9e-HFq"/>
+                        <action selector="screenSingleTap:" destination="1Fp-Zm-xDT" id="sr6-0q-P98"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Ays-Sq-gG7" userLabel="pokerDiceOneSingleTap">
+                    <connections>
+                        <action selector="pokerDiceOneSingleTap:" destination="1Fp-Zm-xDT" id="Ss4-b0-vxO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="hEN-2l-lnk" userLabel="pokerDiceTwoSingleTap">
+                    <connections>
+                        <action selector="pokerDiceTwoSingleTap:" destination="1Fp-Zm-xDT" id="KPq-zk-oYi"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="sko-0H-Tr4" userLabel="pokerDiceThreeSingleTap">
+                    <connections>
+                        <action selector="pokerDiceThreeSingleTap:" destination="1Fp-Zm-xDT" id="g85-Gi-BK8"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="twP-1y-7hx" userLabel="pokerDiceFourSingleTap">
+                    <connections>
+                        <action selector="pokerDiceFouSingleTap:" destination="1Fp-Zm-xDT" id="mki-o0-rvh"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="f8J-81-nwv" userLabel="pokerDiceFiveSingleTap">
+                    <connections>
+                        <action selector="pokerDiceFiveSingleTap:" destination="1Fp-Zm-xDT" id="Wy6-yt-QV5"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -86,7 +127,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Qs8-gH-vCC"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.80109405519999999" green="0.61656397665969054" blue="0.060481481834237669" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <gestureRecognizers/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="1black" selectedImage="1black" id="cLu-eB-mx0"/>
