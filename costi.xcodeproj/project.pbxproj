@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C3F37AC29BE22530030EE88 /* Dice3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F37AB29BE22530030EE88 /* Dice3ViewController.swift */; };
 		2C7A9F3529B8F24D00984E8E /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7A9F3429B8F24D00984E8E /* Tabbar.storyboard */; };
 		2CD01E3029BC769500196325 /* Dice2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD01E2F29BC769500196325 /* Dice2ViewController.swift */; };
 		2CF30ABC29B0ADD800DF5CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF30ABB29B0ADD800DF5CD3 /* AppDelegate.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C3F37AB29BE22530030EE88 /* Dice3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice3ViewController.swift; sourceTree = "<group>"; };
 		2C7A9F3429B8F24D00984E8E /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
 		2CD01E2F29BC769500196325 /* Dice2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice2ViewController.swift; sourceTree = "<group>"; };
 		2CF30AB829B0ADD800DF5CD3 /* costi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = costi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C3F37AA29BE22370030EE88 /* Dice3 */ = {
+			isa = PBXGroup;
+			children = (
+				2C3F37AB29BE22530030EE88 /* Dice3ViewController.swift */,
+			);
+			path = Dice3;
+			sourceTree = "<group>";
+		};
 		2C7A9F3129B8F0D000984E8E /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +125,7 @@
 			children = (
 				2CF462B429BB8C5F0025DD08 /* Dice1 */,
 				2CD01E2E29BC767900196325 /* Dice2 */,
+				2C3F37AA29BE22370030EE88 /* Dice3 */,
 				2C7A9F3429B8F24D00984E8E /* Tabbar.storyboard */,
 				2CF462B229BB8B6A0025DD08 /* TabbarController.swift */,
 			);
@@ -329,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CF30AC029B0ADD800DF5CD3 /* ViewController.swift in Sources */,
+				2C3F37AC29BE22530030EE88 /* Dice3ViewController.swift in Sources */,
 				2CF462B329BB8B6A0025DD08 /* TabbarController.swift in Sources */,
 				2CD01E3029BC769500196325 /* Dice2ViewController.swift in Sources */,
 				2CF462B629BB8CA90025DD08 /* Dice1ViewController.swift in Sources */,

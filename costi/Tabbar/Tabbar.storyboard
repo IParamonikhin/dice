@@ -105,7 +105,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-63.358778625954194" y="92.957746478873247"/>
+            <point key="canvasLocation" x="-407" y="225"/>
         </scene>
         <!--Dice1 View Controller-->
         <scene sceneID="KhD-OJ-k6s">
@@ -145,7 +145,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-750.38167938931292" y="92.957746478873247"/>
+            <point key="canvasLocation" x="-1094" y="225"/>
         </scene>
         <!--Tabbar Controller-->
         <scene sceneID="VNB-fo-WMU">
@@ -160,15 +160,153 @@
                     <connections>
                         <segue destination="yvc-Mv-r30" kind="relationship" relationship="viewControllers" id="0W9-Q2-J6T"/>
                         <segue destination="1Fp-Zm-xDT" kind="relationship" relationship="viewControllers" id="HU3-cB-iAn"/>
+                        <segue destination="8bh-G7-AO1" kind="relationship" relationship="viewControllers" id="8EV-2T-kBk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ah-nS-mGs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-395" y="-584"/>
         </scene>
+        <!--Dice3 View Controller-->
+        <scene sceneID="3Qw-Xz-EAI">
+            <objects>
+                <viewController id="8bh-G7-AO1" customClass="Dice3ViewController" customModule="costi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e8T-Nk-Gov">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uxb-2A-lNE" userLabel="Thousand Dice One Image">
+                                <rect key="frame" x="16" y="235" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="w8G-Yg-AsN" appends="YES" id="Biy-Rc-mrk"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TbP-TN-QQ2" userLabel="Thousand  Dice Two Image">
+                                <rect key="frame" x="136" y="235" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="5ch-82-pSI" appends="YES" id="vZC-RF-ank"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OGC-Qv-Qjq" userLabel="Thousand  Dice Three Image">
+                                <rect key="frame" x="257" y="235" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="1aZ-AZ-crb" appends="YES" id="vvl-Vh-jRZ"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XRv-GS-tuU" userLabel="Thousand  Dice Four Image">
+                                <rect key="frame" x="16" y="363" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="LSJ-37-BR0" appends="YES" id="2cF-F4-MCx"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xEt-hD-rHF" userLabel="Thousand  Dice Five Image">
+                                <rect key="frame" x="136" y="363" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="keD-ex-Cmy" appends="YES" id="Poq-oi-xiS"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gjf-VO-mHO" userLabel="Thousand  Dice Six Image">
+                                <rect key="frame" x="257" y="363" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="YDy-Xl-Tmm" appends="YES" id="SDI-T9-jhP"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="text2" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTB-qf-raS">
+                                <rect key="frame" x="20" y="566" width="352" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="36"/>
+                                <color key="textColor" red="0.2603673339" green="0.055810548369999997" blue="0.1452732384" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="text1" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zQ-3U-ayT">
+                                <rect key="frame" x="20" y="79" width="352" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="36"/>
+                                <color key="textColor" red="0.2603673339" green="0.055810548369999997" blue="0.1452732384" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahF-yf-5EW">
+                                <rect key="frame" x="123" y="681" width="146" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qxj-zW-9lp"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="4bh-7Z-Jdf" appends="YES" id="O2l-T7-RHE"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="3black" landscapeImage="3black" selectedImage="3black" id="kFo-uz-Okk"/>
+                    <connections>
+                        <outlet property="thousandDiceButtonRollRestart" destination="ahF-yf-5EW" id="usR-fq-D7I"/>
+                        <outlet property="thousandDiceFiveImage" destination="xEt-hD-rHF" id="nhB-9o-aza"/>
+                        <outlet property="thousandDiceFourImage" destination="XRv-GS-tuU" id="izd-iT-Pao"/>
+                        <outlet property="thousandDiceLabelLower" destination="hTB-qf-raS" id="ymL-3R-V8U"/>
+                        <outlet property="thousandDiceLabelUpper" destination="7zQ-3U-ayT" id="uDi-CN-fB6"/>
+                        <outlet property="thousandDiceOneImage" destination="uxb-2A-lNE" id="jPV-fa-SCF"/>
+                        <outlet property="thousandDiceSixImage" destination="gjf-VO-mHO" id="1k1-xX-sDX"/>
+                        <outlet property="thousandDiceThreeImage" destination="OGC-Qv-Qjq" id="zW6-gc-Hra"/>
+                        <outlet property="thousandDiceTwoImage" destination="TbP-TN-QQ2" id="Z1Z-Ge-ERN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9q6-SD-0qi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="4bh-7Z-Jdf" userLabel="screenSingleTap">
+                    <connections>
+                        <action selector="screenSingleTap:" destination="8bh-G7-AO1" id="szY-O7-72c"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="w8G-Yg-AsN" userLabel="thousandDiceOneSingleTap">
+                    <connections>
+                        <action selector="thousandDiceOneSingleTap:" destination="8bh-G7-AO1" id="tIn-W3-DSv"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="5ch-82-pSI" userLabel="thousandDiceTwoSingleTap">
+                    <connections>
+                        <action selector="thousandDiceTwoSingleTap:" destination="8bh-G7-AO1" id="UjU-zR-AmQ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="1aZ-AZ-crb" userLabel="thousandDiceThreeSingleTap">
+                    <connections>
+                        <action selector="thousandDiceThreeSingleTap:" destination="8bh-G7-AO1" id="Xdp-VQ-pIc"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="LSJ-37-BR0" userLabel="thousandDiceFourSingleTap">
+                    <connections>
+                        <action selector="thousandDiceFourSingleTap:" destination="8bh-G7-AO1" id="1n4-xO-Dr8"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="keD-ex-Cmy" userLabel="thousandDiceFiveSingleTap">
+                    <connections>
+                        <action selector="thousandDiceFiveSingleTap:" destination="8bh-G7-AO1" id="GLz-Fa-qw8"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="YDy-Xl-Tmm" userLabel="thousandDiceSixSingleTap">
+                    <connections>
+                        <action selector="thousandDiceSixSingleTap:" destination="8bh-G7-AO1" id="RjS-WU-Q6W"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="255.72519083969465" y="224.64788732394368"/>
+        </scene>
     </scenes>
     <resources>
         <image name="1black" width="32.333332061767578" height="32.333332061767578"/>
         <image name="2black" width="32.333332061767578" height="32.333332061767578"/>
+        <image name="3black" width="32.333332061767578" height="32.333332061767578"/>
     </resources>
 </document>

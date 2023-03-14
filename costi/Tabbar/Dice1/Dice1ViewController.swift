@@ -28,7 +28,7 @@ class Dice1ViewController: UIViewController {
     }
     
     func randomVal ()->Int{
-        var val:Int = Int.random(in: 1...6)
+        let val:Int = Int.random(in: 1...6)
         return val
     }
     
