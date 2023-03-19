@@ -21,7 +21,6 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Ays-Sq-gG7" appends="YES" id="MAW-e4-RPm"/>
-                                    <outletCollection property="gestureRecognizers" destination="Ays-Sq-gG7" appends="YES" id="Y3k-JF-ObA"/>
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RCS-0H-3bp">
@@ -251,7 +250,9 @@
                             <outletCollection property="gestureRecognizers" destination="4bh-7Z-Jdf" appends="YES" id="O2l-T7-RHE"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="3black" landscapeImage="3black" selectedImage="3black" id="kFo-uz-Okk"/>
+                    <tabBarItem key="tabBarItem" title="" image="3black" selectedImage="3black" id="kFo-uz-Okk">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="thousandDiceButtonRollRestart" destination="ahF-yf-5EW" id="usR-fq-D7I"/>
                         <outlet property="thousandDiceFiveImage" destination="xEt-hD-rHF" id="nhB-9o-aza"/>
@@ -259,7 +260,7 @@
                         <outlet property="thousandDiceLabelLower" destination="hTB-qf-raS" id="ymL-3R-V8U"/>
                         <outlet property="thousandDiceLabelUpper" destination="7zQ-3U-ayT" id="uDi-CN-fB6"/>
                         <outlet property="thousandDiceOneImage" destination="uxb-2A-lNE" id="jPV-fa-SCF"/>
-                        <outlet property="thousandDiceSixImage" destination="gjf-VO-mHO" id="1k1-xX-sDX"/>
+                        <outlet property="thousandDiceSixImage" destination="gjf-VO-mHO" id="bdT-Km-DYY"/>
                         <outlet property="thousandDiceThreeImage" destination="OGC-Qv-Qjq" id="zW6-gc-Hra"/>
                         <outlet property="thousandDiceTwoImage" destination="TbP-TN-QQ2" id="Z1Z-Ge-ERN"/>
                     </connections>
