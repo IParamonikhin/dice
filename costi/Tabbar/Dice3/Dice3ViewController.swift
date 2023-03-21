@@ -8,37 +8,6 @@
 import UIKit
 import Foundation
 
-class ThousandDice{
-    var iv: UIImageView!
-    var diceVal:Int = 1
-    var isTap : Bool = false
-    
-    func diceTap(_ firtstTap: Bool){
-        if(firtstTap){
-            self.isTap = self.isTap ? false :  true
-            self.iv.image = self.isTap ? UIImage(named: "\(self.diceVal)black.png") :  UIImage(named: "\(self.diceVal)white.png")
-        }
-    }
-    func diceRoll(){
-        if(!self.isTap){
-            self.diceVal = randomVal()
-            self.iv.image = UIImage(named: "\(self.diceVal)white.png")
-        }
-    }
-    
-    func ivTapRecognizerInit (_ target: UIViewController, _ action : Selector){
-        let ivTapRecognizer = UITapGestureRecognizer(target: target, action: action)
-        ivTapRecognizer.numberOfTapsRequired = 1
-        ivTapRecognizer.numberOfTouchesRequired = 1
-        self.iv.addGestureRecognizer(ivTapRecognizer)
-        self.iv.image = UIImage(named: "1white.png")
-    }
-    
-    private func randomVal ()->Int{
-        let val:Int = Int.random(in: 1...6)
-        return val
-    }
-}
 
 class Dice3ViewController: UIViewController {
     
@@ -54,24 +23,24 @@ class Dice3ViewController: UIViewController {
     
     @IBOutlet weak var thousandDiceButtonRollRestart: UIButton!
     
-    var diceOne: ThousandDice
-    var diceTwo: ThousandDice
-    var diceThree: ThousandDice
-    var diceFour: ThousandDice
-    var diceFive: ThousandDice
-    var diceSix: ThousandDice
-    var dices: [ThousandDice]
+    var diceOne: Dice
+    var diceTwo: Dice
+    var diceThree: Dice
+    var diceFour: Dice
+    var diceFive: Dice
+    var diceSix: Dice
+    var dices: [Dice]
     
     var firtstTap = false
     var tryCount = 2
     
     required init?(coder: NSCoder) {
-        self.diceOne = ThousandDice()
-        self.diceTwo = ThousandDice()
-        self.diceThree = ThousandDice()
-        self.diceFour = ThousandDice()
-        self.diceFive = ThousandDice()
-        self.diceSix = ThousandDice()
+        self.diceOne = Dice()
+        self.diceTwo = Dice()
+        self.diceThree = Dice()
+        self.diceFour = Dice()
+        self.diceFive = Dice()
+        self.diceSix = Dice()
         self.dices = [diceOne, diceTwo, diceThree, diceFour, diceFive, diceSix]
         super.init(coder: coder)
     }
@@ -80,22 +49,18 @@ class Dice3ViewController: UIViewController {
         super.viewDidLoad()
         
         thousandDiceButtonRollRestart.setTitle("Roll", for: .normal)
+        
         let screenSingleTap = UITapGestureRecognizer(target: self, action: #selector(self.screenSingleTap(_:)))
         screenSingleTap.numberOfTapsRequired = 1
         screenSingleTap.numberOfTouchesRequired = 1
         thousandDiceButtonRollRestart.addGestureRecognizer(screenSingleTap)
-        diceOne.iv = thousandDiceOneImage
-        diceOne.ivTapRecognizerInit(self, #selector(thousandDiceOneSingleTap(_:)))
-        diceTwo.iv = thousandDiceTwoImage
-        diceTwo.ivTapRecognizerInit(self, #selector(thousandDiceTwoSingleTap(_:)))
-        diceThree.iv = thousandDiceThreeImage
-        diceThree.ivTapRecognizerInit(self, #selector(thousandDiceThreeSingleTap(_:)))
-        diceFour.iv = thousandDiceFourImage
-        diceFour.ivTapRecognizerInit(self, #selector(thousandDiceFourSingleTap(_:)))
-        diceFive.iv = thousandDiceFiveImage
-        diceFive.ivTapRecognizerInit(self, #selector(thousandDiceFiveSingleTap(_:)))
-        diceSix.iv = thousandDiceSixImage
-        diceSix.ivTapRecognizerInit(self, #selector(thousandDiceSixSingleTap(_:)))
+        
+        diceOne.ivTapRecognizerInit(thousandDiceOneImage, self, #selector(thousandDiceOneSingleTap(_:)))
+        diceTwo.ivTapRecognizerInit(thousandDiceTwoImage, self, #selector(thousandDiceTwoSingleTap(_:)))
+        diceThree.ivTapRecognizerInit(thousandDiceThreeImage, self, #selector(thousandDiceThreeSingleTap(_:)))
+        diceFour.ivTapRecognizerInit(thousandDiceFourImage, self, #selector(thousandDiceFourSingleTap(_:)))
+        diceFive.ivTapRecognizerInit(thousandDiceFiveImage, self, #selector(thousandDiceFiveSingleTap(_:)))
+        diceSix.ivTapRecognizerInit(thousandDiceSixImage, self, #selector(thousandDiceSixSingleTap(_:)))
     }
     
     @IBAction func screenSingleTap(_ sender: Any) {
@@ -120,6 +85,7 @@ class Dice3ViewController: UIViewController {
                 firtstTap = false
                 thousandDiceButtonRollRestart.setTitle("Roll", for: .normal)
                 tryCount = 2
+                thousandDiceLabelUpper.text = "ostalos \(tryCount + 1) popitok"
             }
         }
     }

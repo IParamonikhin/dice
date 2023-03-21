@@ -43,9 +43,6 @@
                                 <rect key="frame" x="77" y="363" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="twP-1y-7hx" appends="YES" id="hIw-uN-rOg"/>
-                                </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jcq-bV-Ish">
                                 <rect key="frame" x="198" y="363" width="120" height="120"/>
@@ -95,7 +92,7 @@
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="twP-1y-7hx" userLabel="pokerDiceFourSingleTap">
                     <connections>
-                        <action selector="pokerDiceFouSingleTap:" destination="1Fp-Zm-xDT" id="mki-o0-rvh"/>
+                        <action selector="pokerDiceFourSingleTap:" destination="1Fp-Zm-xDT" id="xMx-8T-pbl"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="f8J-81-nwv" userLabel="pokerDiceFiveSingleTap">
@@ -132,15 +129,14 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="1black" selectedImage="1black" id="cLu-eB-mx0"/>
                     <connections>
-                        <outlet property="DiceOne" destination="MTx-om-IER" id="gH3-jp-4ON"/>
-                        <outlet property="diceOne" destination="MTx-om-IER" id="P79-C9-lF7"/>
+                        <outlet property="diceUno" destination="MTx-om-IER" id="IsI-3d-w9v"/>
                         <outlet property="rollButton" destination="u22-sw-9S9" id="K2S-gi-wuD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scD-Mf-Y3u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="hQc-IB-JLS">
                     <connections>
-                        <action selector="tapTrue:" destination="yvc-Mv-r30" id="hcU-fH-NuE"/>
+                        <action selector="singleTap:" destination="yvc-Mv-r30" id="9kk-8i-ILj"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -222,14 +218,14 @@
                                     <outletCollection property="gestureRecognizers" destination="YDy-Xl-Tmm" appends="YES" id="SDI-T9-jhP"/>
                                 </connections>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="text2" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTB-qf-raS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTB-qf-raS">
                                 <rect key="frame" x="20" y="566" width="352" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="36"/>
                                 <color key="textColor" red="0.2603673339" green="0.055810548369999997" blue="0.1452732384" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="text1" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zQ-3U-ayT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zQ-3U-ayT">
                                 <rect key="frame" x="20" y="79" width="352" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="36"/>
